@@ -2,9 +2,9 @@ from cqc.pythonLib import CQCConnection, qubit
 
 
 with CQCConnection("Sothy") as Sothy:
-	q = Sothy.recvQubit()
+	q = Sothy.recvEPR()
 	m = q.measure()
-	print(m)
+	print("Sothy", m)
 
 
 
