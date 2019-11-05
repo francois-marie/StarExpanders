@@ -3,8 +3,8 @@ from lib import *
 
 
 my_name = "Georg"
-targets = ["Sothy"]
-n_receive = 0
+targets = ["Sothy", "FM"]
+n_receive = 1
 
 with CQCConnection(my_name) as name_inst:
 
