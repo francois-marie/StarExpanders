@@ -11,5 +11,6 @@ with CQCConnection("Sothy") as name_inst:
 	print(my_name+"'s qbits:")
 	for target in qbitdict:
 		print(target, qbitdict[target].measure())
+		#print(qbitdict[target])
 
 	

@@ -10,10 +10,12 @@ def receive_link(name_inst, n_receive):
 		message = name_inst.recvClassical()
 		c1 = "".join(chr(x) for x in message)
 		c1_name, c1_id = c1.split(",")
-		senders[c1_id] = c1_name
+		senders[int(c1_id)] = c1_name
+		#print(senders)
 
 	for q in rqbits:
 		q_id = q.get_entInfo().id_AB
+		#print("q_id", q_id)
 		qbitdict[senders[q_id]] = q
 
 	return qbitdict
@@ -36,7 +38,7 @@ def node_prepare(name_inst, targets, n_receive):
 
 	for target in targets:
 		qbitdict[target] = send_link(name_inst, target)
-		print(qbitdict[target].measure())
+		#print(qbitdict[target].measure())
 	return qbitdict
 
 
