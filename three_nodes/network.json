@@ -1,0 +1,27 @@
+{
+	"node1": {
+	    "my_name": "Shraddha",
+	    "target": ["Sothy", "FM"],
+	    "receivers": 0
+	},
+	"node2": {
+	    "my_name": "Sothy",
+	    "target": [],
+	    "receivers": 2
+	},
+	"node3": {
+	    "my_name": "Georg",
+	    "target": ["Sothy", "FM"],
+	    "receivers": 1
+	},
+	"node4": {
+	    "my_name": "Fred",
+	    "target": ["Georg"],
+	    "receivers": 0
+	},
+	"node5": {
+	    "my_name": "FM",
+	    "target": [],
+	    "receivers": 1
+	}
+}
