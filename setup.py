@@ -21,6 +21,7 @@ REQUIRED = [
         'flake8',
         'click',
         'daemons'
+        'simulaqron'
     ]
 
 with open('README.md') as f:
