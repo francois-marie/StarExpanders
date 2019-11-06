@@ -1,36 +1,70 @@
 # StarExpanders
 
-This is the repo code for PEQI hackathon
+This repository has be made during the 2019 edition of the Pan-European Quantum Internet Hackathon — Paris Node, on November 5th and 6th, 2019.
 
-## TODO
+It deals with Distributing Graph States Over Arbitrary Quantum Networks using Simulacron
+The paper can be found at the following URL:
+https://arxiv.org/pdf/1811.05445.pdf
+
+This project uses Simulacron, an application level simulator for a quantum internet:
+http://www.simulaqron.org/
+
+
+
+## Creation of the graph
+
+````network.py````
+generates a json file descriptive of the directional network with specific id and a specific folder for the protocol execution
+````id_network.json````
+Creates the protocol for the execution of the nodes to go from the network to a GHZ of specified nodes
+````id_protocol.json````
+TODO: generate protocol automatically from the network and the list of target nodes
+
+## Generate simulacron
+
+````network2local.py````
+Generated two bash scripts
+* To start the simulacron network
+````start.sh````
+* To execute the protocol on the nodes
+````run.sh````
+
+## Run the protocol
+
+````start.sh````
+````run.sh```` calls ````run_node.py```` to generate the CQCConnection for each node and execute the protocol for star expansions.
+
+## DONE
 
 ### Create network:
-
-5 nodes w/ names
-````Graph(n=5, coupling_map)````
+````
+{"alpha": {
+    "my_name": "alpha",
+    "target": [beta],
+    "receivers": 2
+    },
+    ...
+    }
+````
 
 ### Connect the nodes indirectly
 
 locally using CZ gates at each node
-````node.connect()````
 
 ### Erase a qubit
 
 and its connections: Measure Z
-````node.erase()````
 
 ### Connect neighbors directly
 
 CZ+Y_Y
-````DirectConnect(x, y, commun_neighbors)````
 
-### Local complementation
+## TODO
 
-Y measurement
-````node.LC()````
+### Local corrections
 
-### Class
+Implement local corrections for GHZ star expansion
 
-#### Node()
+### Protocol Generation
 
-#### Graph()
+Generate automatically the protocol to get GHZ from a graph given a list of targets
