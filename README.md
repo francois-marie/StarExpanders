@@ -59,13 +59,27 @@ Generated two bash scripts
 
 ### Create network:
 ````
-{"alpha": {
-    "my_name": "alpha",
-    "target": [beta],
-    "receivers": 2
+{"alpha": {                 # Node number 1
+    "my_name": "alpha",     # Node name
+    "target": ["beta"],     # Node number 1 sends one qubit of EPR pair to Nodes in "target" list
+    "receivers": 2          # Node number 1 receives one qubit of EPR pair sent by 2 receivers. (port_A) identifies the sender
     },
     ...
     }
+````
+
+### GHZ state
+
+Create GHZ state
+````
+[
+    {
+        "place": "gamma",       # Node at which GHZ state preparation takes place. Node isolated in the final GHZ state
+        "source": "delta",      # Center node in the final GHZ state
+        "targets": ["gamma"]    # Nodes connected in the GHZ state to the center node
+    },
+    ...
+]
 ````
 
 ### Connect the nodes indirectly
@@ -89,6 +103,18 @@ Implement local corrections for GHZ star expansion
 ### Protocol Generation
 
 Generate automatically the protocol to get GHZ from a graph given a list of targets
+
+## Authors
+
+This example was created at the Pan-European Quantum Internet Hackathon — Paris Node, on November 5th and 6th, 2019.
+
+The team members were:
+* Frederic Grosshans
+* Shraddha Singh
+* Georg Harder
+* Sivasothy Shanmugalingam
+* Francois-Marie Le Régent
+
 
 
 ![alt text](https://github.com/francois-marie/StarExpanders/blob/master/Steiner_tree.png)
