@@ -1,10 +1,12 @@
 from cqc.pythonLib import CQCConnection, qubit
 from lib import *
+import json
 
-
-my_name = "FM"
-targets = []
-n_receive = 1
+f = open('Shraddha4.json', 'r')
+data = json.load(f)
+my_name = data['my_name']
+targets = data['target']
+n_receive = data['receivers']
 
 with CQCConnection(my_name) as name_inst:
 
