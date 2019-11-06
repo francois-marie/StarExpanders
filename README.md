@@ -117,6 +117,18 @@ The team members were:
 * Sivasothy Shanmugalingam
 * Francois-Marie Le Régent
 
+You can play a demo of the final run of the protocol using the following command:
+
+````
+sudo apt-get install ttyrec
+sudo apt-get install imagemagick
+sudo apt-get install python-opster
+ttyplay ttyrecord
+````
+
+### Remark:
+Make sure ````ttyrecord```` is in your present working directory
+
 
 
 ![alt text](https://github.com/francois-marie/StarExpanders/blob/master/Steiner_tree.png)
