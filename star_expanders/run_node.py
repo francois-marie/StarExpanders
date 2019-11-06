@@ -20,6 +20,11 @@ with CQCConnection(my_name) as name_inst:
 
 
 	qbitdict = node_prepare(name_inst, targets, n_receive)
+
+	protocol = protocol_from_json(my_name)
+	source = protocol['source']
+	targets = protocol['targets']
+	qbitdict = star_expansion(qbitdict, name_inst, source, targets)
 	for target in qbitdict:
 		print(my_name, target, qbitdict[target].measure())
 
