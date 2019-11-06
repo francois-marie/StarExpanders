@@ -66,6 +66,17 @@ def open_json(name):
 
 
 def star_expansion(my_qubit_dict, name_inst, source, targets):
+	"""does the star expansion of the target from the source
+
+	Arguments:
+		my_qubit_dict {dict{simulacronQubitObject}} -- [description]
+		name_inst {SimulacronCQCConnectionObjct} -- [description]
+		source {str} -- [description]
+		targets {str} -- [description]
+
+	Returns:
+		[type] -- [description]
+	"""
 	my_name = name_inst.name
 	protocol = protocol_from_json(my_name)
 	if targets==[my_name]: # (aka do nothing)
@@ -75,7 +86,7 @@ def star_expansion(my_qubit_dict, name_inst, source, targets):
 			my_qubit_dict[my_name] = (name_inst.qubit()).H()
 		q_aux = name_inst.qubit()
 		q_aux.H()
-		#q_aux.cphase(my_qubit_dict[source])
+		q_aux.cphase(my_qubit_dict[source])
 		for target in targets:
 			q_aux.cphase(my_qubit_dict[target])
 		q_aux.Y()
@@ -84,4 +95,3 @@ def star_expansion(my_qubit_dict, name_inst, source, targets):
 			if t != my_name:
 				m2 = (my_qubit_dict[t].Y()).measure()
 		return my_qubit_dict
-    	#FinalQubit=qubit[Source]

@@ -1,12 +1,12 @@
 '''
 #Creates GHZ([Shraddha, Sothy, FM, Fred]) out of our 5 nodes network
-
-    FM         STAREXP  Georg, [FM] 
+    Place      STAREXP  Source, Targets
+    FM         STAREXP  Georg, [FM]
     Georg      STAREXP  FM,    [Fred, Sothy]
     Fred       STAREXP  Georg, [Fred]
     Sothy      STAREXP  Georg, [Sothy, Shraddha]
     Shraddha   STAREXP  Sothy,[Shraddha]
-
+star_expansion(my_qubit_dict, name_inst, source, targets)
 '''
 
 '''
