@@ -1,6 +1,6 @@
 # StarExpanders
 
-![alt text](https://github.com/francois-marie/StarExpanders/blob/master/distribute_GHZ_arbitrary_network.png){:height="50%" width="50%"}
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/distribute_GHZ_arbitrary_network.png)
 
 images by Clément Meignant
 
