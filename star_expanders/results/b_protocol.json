@@ -1,0 +1,1 @@
+{"FM": {"place": "FM", "source": "Georg", "targets": ["FM"]}, "Georg": {"place": "Georg", "source": "FM", "targets": ["Fred", "Sothy"]}, "Fred": {"place": "Fred", "source": "Georg", "targets": ["Fred"]}, "Sothy": {"place": "Sothy", "source": "Georg", "targets": ["Sothy", "Shraddha"]}, "Shraddha": {"place": "Shraddha", "source": "Sothy", "targets": ["Shraddha"]}}

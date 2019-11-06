@@ -7,6 +7,8 @@ with open("starExpansionTree.json") as f:
     '''
     finalD ={}
     for p in data:
-        finalD[p['place']]=p
+        finalD[p["place"]]=p
     
     print(finalD)
+    with open("star_expanders/results/b_protocol.json", 'w') as f:
+        print(finalD, file=f)
