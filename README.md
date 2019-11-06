@@ -14,11 +14,19 @@ https://arxiv.org/pdf/1811.05445.pdf
 This project uses Simulaqron, an application level simulator for a quantum internet:
 http://www.simulaqron.org/
 
-## Commands to run the repository
+## Bash script
+
+The package needs Simulaqron to work properly
+PYTHONPATH should be in the Simulaqron directory
 
 ````
 git clone https://github.com/francois-marie/StarExpanders
-
+cd StarExpanders
+export PYTHONPATH=$(pwd):$PYTHONPATH
+python network.py
+python network2local.py
+./start.sh
+./run.sh
 
 ````
 
