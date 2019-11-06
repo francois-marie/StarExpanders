@@ -24,7 +24,7 @@ def generate_files_from_network(id):
 		targets = data[node]['target']
 		n_receive = data[node]['receivers']
 
-		generate_python_file_from_node(folder_prefix,  my_name, targets, n_receive)
+		#generate_python_file_from_node(folder_prefix,  my_name, targets, n_receive)
 
 	g.close()
 
