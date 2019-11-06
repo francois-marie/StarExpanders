@@ -27,7 +27,8 @@ graph = {'Sothy': [],
            'Shraddha': ['Sothy'],
              'Fred': ['Georg'],
              'Georg': ['Sothy',"FM"],
-             'FM': [],}
+             'FM': []
+             }
 
 def calculate_n_receive(graph):
     outdic={name:0 for name in graph}
@@ -54,6 +55,25 @@ def print_nodes_conf(graph):
         print(node, file=f)
 def main():
     print_nodes_conf(graph)
+
+def generate_network_from_graph(graph):
+    n_receive=calculate_n_receive(graph)
+    id = input("What is the id of the network ?")
+    network=dict()
+    for node in graph.keys():
+        network[node] = {
+        "my_name": node,
+	    "target": graph[node],
+	    "receivers": n_receive[node]
+        }
+    write_json(network, id+ "_network.json")
+    return(network)
+
+
+def write_json(data, name):
+    with open(name, 'w') as fp:
+        json.dump(data, fp)
+    return
 
 if __name__=="__main__":
     main()
