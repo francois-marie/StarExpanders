@@ -1,5 +1,7 @@
 # StarExpanders
 
+## [Entanglement Routing]
+
 ![alt text](https://github.com/francois-marie/StarExpanders/blob/master/distribute_GHZ_arbitrary_network.png)
 
 images by Clément Meignant
