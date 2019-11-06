@@ -1,8 +1,8 @@
 # StarExpanders
 
-![alt text](https://github.com/francois-marie/StarExpanders/distribute_GHZ_arbitrary_network.png)
-![alt text](https://github.com/francois-marie/StarExpanders/Steiner_tree.png)
-![alt text](https://github.com/francois-marie/StarExpanders/generalized_entanglement_swapping.png)
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/distribute_GHZ_arbitrary_network.png)
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/Steiner_tree.png)
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/generalized_entanglement_swapping.png)
 
 images by Clément Meignant
 
