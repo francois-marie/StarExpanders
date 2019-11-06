@@ -1,3 +1,6 @@
-settings.json
+
+.vscode
 
 StarExpanders.egg-info
+
+.gitignore
