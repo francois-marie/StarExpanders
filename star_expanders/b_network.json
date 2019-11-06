@@ -1,0 +1,1 @@
+{"Sothy": {"my_name": "Sothy", "target": [], "receivers": 2}, "Shraddha": {"my_name": "Shraddha", "target": ["Sothy"], "receivers": 0}, "Fred": {"my_name": "Fred", "target": ["Georg"], "receivers": 0}, "Georg": {"my_name": "Georg", "target": ["Sothy", "FM"], "receivers": 1}, "FM": {"my_name": "FM", "target": [], "receivers": 1}}

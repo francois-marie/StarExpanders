@@ -48,4 +48,4 @@ def generate_files_from_network(id):
 	return
 
 if __name__ == "__main__":
-	generate_files_from_network("a")
+	generate_files_from_network("b")

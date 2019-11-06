@@ -66,7 +66,7 @@ def generate_network_from_graph(graph):
 	    "target": graph[node],
 	    "receivers": n_receive[node]
         }
-    write_json(network, id+ "_network.json")
+    write_json(network, "results/"+id+ "_network.json")
     return(network)
 
 
@@ -76,4 +76,5 @@ def write_json(data, name):
     return
 
 if __name__=="__main__":
-    main()
+    #main()
+    generate_network_from_graph(graph)

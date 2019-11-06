@@ -1,0 +1,34 @@
+[
+    {
+        "node": "Sothy",
+        "targets": [],
+        "n_receive": 2
+    },
+    {
+        "node": "Shraddha",
+        "targets": [
+            "Sothy"
+        ],
+        "n_receive": 0
+    },
+    {
+        "node": "Fred",
+        "targets": [
+            "Georg"
+        ],
+        "n_receive": 0
+    },
+    {
+        "node": "Georg",
+        "targets": [
+            "Sothy",
+            "FM"
+        ],
+        "n_receive": 1
+    },
+    {
+        "node": "FM",
+        "targets": [],
+        "n_receive": 1
+    }
+]
