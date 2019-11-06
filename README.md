@@ -1,5 +1,11 @@
 # StarExpanders
 
+![alt text](https://github.com/francois-marie/StarExpanders/distribute_GHZ_arbitrary_network.png)
+![alt text](https://github.com/francois-marie/StarExpanders/Steiner_tree.png)
+![alt text](https://github.com/francois-marie/StarExpanders/generalized_entanglement_swapping.png)
+
+images by Clément Meignant
+
 This repository has be made during the 2019 edition of the Pan-European Quantum Internet Hackathon — Paris Node, on November 5th and 6th, 2019.
 
 It deals with Distributing Graph States Over Arbitrary Quantum Networks using Simulaqron.
