@@ -50,7 +50,7 @@ def params_from_json(id, name):
 		id {str} -- id of the network
 		name {str} -- name of the node
 	"""
-	network = open_json("results/"+id+"_networ.json")
+	network = open_json("results/"+id+"_network.json")
 	node = network[name]
 	return(node["target"], node["receivers"])
 

@@ -33,9 +33,9 @@ def generate_files_from_network(id):
 	with open(folder_prefix+'run.sh', 'w')  as f:
 		for name in names:
 			if name!=names[-1]:
-				f.write('python '+name+'.py &\n')
+				f.write('python ../../run_node.py '+name+' '+id+' &\n')
 			else:
-				f.write('python '+name+'.py\n')
+				f.write('python ../../run_node.py '+name+' '+id+' \n')
 
 
 	with open(folder_prefix+'start.sh', 'w')  as f:
