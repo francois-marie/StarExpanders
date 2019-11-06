@@ -1,5 +1,5 @@
 from cqc.pythonLib import CQCConnection, qubit
-
+import json
 
 def receive_link(name_inst, n_receive):
 	qbitdict = {}
@@ -33,10 +33,6 @@ def send_link(name_inst, target):
 	name_inst.sendClassical(target, [ord(c) for c in message])
 	return q
 
-
-
-
-
 def node_prepare(name_inst, targets, n_receive):
 	#with CQCConnection(name) as name_inst:
 	qbitdict = receive_link(name_inst, n_receive)
@@ -46,8 +42,20 @@ def node_prepare(name_inst, targets, n_receive):
 		#print(qbitdict[target].measure())
 	return qbitdict
 
+def params_from_json(id, name):
+	"""
+	returns list of strings and int
+
+	Arguments:
+		id {str} -- id of the network
+		name {str} -- name of the node
+	"""
+	network = open_json("results/"+id+"_networ.json")
+	node = network[name]
+	return(node["target"], node["receivers"])
 
 
-
-
-
+def open_json(name):
+    with open(name, encoding='utf-8') as fh:
+        data = json.load(fh)
+    return (data)

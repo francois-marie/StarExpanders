@@ -4,12 +4,7 @@ import json
 
 def generate_python_file_from_node(folder_prefix, my_name, targets, n_receive):
 	with open(folder_prefix+my_name+".py", 'w')  as f:
-			f.write("from cqc.pythonLib import CQCConnection, qubit\n\
-	from lib import *\n\
-	with CQCConnection('"+my_name+"') as name_inst:\n\
-		qbitdict = node_prepare(name_inst, "+str(targets)+", "+str(n_receive)+")\n\
-		for target in qbitdict:\n\
-			print('"+my_name+"', target, qbitdict[target].measure())")
+		f.write("from cqc.pythonLib import CQCConnection, qubit\n\from lib import *\n\with CQCConnection('"+my_name+"') as name_inst:\n\qbitdict = node_prepare(name_inst, "+str(targets)+", "+str(n_receive)+")\n\for target in qbitdict:\n\print('"+my_name+"', target, qbitdict[target].measure())")
 	return
 
 def generate_files_from_network(id):
