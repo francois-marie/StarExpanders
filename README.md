@@ -2,12 +2,12 @@
 
 This repository has be made during the 2019 edition of the Pan-European Quantum Internet Hackathon — Paris Node, on November 5th and 6th, 2019.
 
-It deals with Distributing Graph States Over Arbitrary Quantum Networks using Simulacron.
+It deals with Distributing Graph States Over Arbitrary Quantum Networks using Simulaqron.
 
 The paper can be found at the following URL:
 https://arxiv.org/pdf/1811.05445.pdf
 
-This project uses Simulacron, an application level simulator for a quantum internet:
+This project uses Simulaqron, an application level simulator for a quantum internet:
 http://www.simulaqron.org/
 
 
@@ -33,6 +33,7 @@ Generated two bash scripts
 ## Run the protocol
 
 ````start.sh````
+
 ````run.sh```` calls ````run_node.py```` to generate the CQCConnection for each node and execute the protocol for star expansions.
 
 ## DONE
