@@ -1,8 +1,6 @@
 # StarExpanders
 
-![alt text](https://github.com/francois-marie/StarExpanders/blob/master/distribute_GHZ_arbitrary_network.png)
-![alt text](https://github.com/francois-marie/StarExpanders/blob/master/Steiner_tree.png)
-![alt text](https://github.com/francois-marie/StarExpanders/blob/master/generalized_entanglement_swapping.png)
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/distribute_GHZ_arbitrary_network.png){:height="50%" width="50%"}
 
 images by Clément Meignant
 
@@ -16,6 +14,13 @@ https://arxiv.org/pdf/1811.05445.pdf
 This project uses Simulaqron, an application level simulator for a quantum internet:
 http://www.simulaqron.org/
 
+## Commands to run the repository
+
+````
+git clone https://github.com/francois-marie/StarExpanders
+
+
+````
 
 
 ## Creation of the graph
@@ -76,3 +81,7 @@ Implement local corrections for GHZ star expansion
 ### Protocol Generation
 
 Generate automatically the protocol to get GHZ from a graph given a list of targets
+
+
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/Steiner_tree.png)
+![alt text](https://github.com/francois-marie/StarExpanders/blob/master/generalized_entanglement_swapping.png)
