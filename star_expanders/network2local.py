@@ -19,7 +19,7 @@ def generate_files_from_network(id):
 		id {[type]} -- [description]
 	"""
 	folder_prefix = "results/"+id+"/"
-	network_prefix = "results/"+id
+	network_prefix = "results/"+id+"_"
 	g = open(network_prefix+'network.json', 'r')
 	data = json.load(g)
 	names = []
