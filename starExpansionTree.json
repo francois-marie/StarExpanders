@@ -1,0 +1,28 @@
+[
+    {
+        "place": "FM",
+        "source": "Georg",
+        "targets": ["FM"]
+    },
+    {
+        "place": "Georg",
+        "source":"FM",
+        "targets": ["Fred", "Sothy"]
+
+    },
+    {
+        "place": "Fred",
+        "source": "Georg",
+        "targets": ["Fred"]
+    },
+    {
+        "place": "Sothy",
+        "source": "Georg",
+        "targets": ["Sothy", "Shraddha"]
+    },
+    {
+        "place": "Shraddha",
+        "source": "Georg",
+        "targets": ["Shraddha"]
+    }
+]
