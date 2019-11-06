@@ -17,7 +17,7 @@ with CQCConnection(my_name) as name_inst:
 		print(my_name, target, qbitdict[target].measure())
 		#print(qbitdict[target])
 
-	
+
 
 
 
