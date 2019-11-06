@@ -4,7 +4,7 @@ from cqc.pythonLib import CQCConnection, qubit
 def receive_link(name_inst, n_receive):
 	qbitdict = {}
 	rqbits = []
-	senders = {} 
+	senders = {}
 	for i in range(n_receive):
 		rqbits.append(name_inst.recvEPR())
 		message = name_inst.recvClassical()
@@ -18,7 +18,7 @@ def receive_link(name_inst, n_receive):
 		#print(name_inst.name, [q])
 		q_id = q.get_entInfo().port_B
 		#print(name_inst.name, "port_B", q.get_entInfo().port_B)
-		
+
 		qbitdict[senders[q_id]] = q
 		#print(name_inst.name, senders)
 
@@ -32,10 +32,10 @@ def send_link(name_inst, target):
 	message = name_inst.name+", "+str(q_id)
 	name_inst.sendClassical(target, [ord(c) for c in message])
 	return q
-	
-	
 
-	
+
+
+
 
 def node_prepare(name_inst, targets, n_receive):
 	#with CQCConnection(name) as name_inst:
@@ -49,5 +49,5 @@ def node_prepare(name_inst, targets, n_receive):
 
 
 
-	
+
 
