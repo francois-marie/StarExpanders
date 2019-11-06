@@ -5,4 +5,8 @@ with open("starExpansionTree.json") as f:
     '''
     data is dict 
     '''
-    print(data)
+    finalD ={}
+    for p in data:
+        finalD[p['place']]=p
+    
+    print(finalD)
