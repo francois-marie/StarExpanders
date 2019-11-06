@@ -2,7 +2,8 @@
 
 This repository has be made during the 2019 edition of the Pan-European Quantum Internet Hackathon — Paris Node, on November 5th and 6th, 2019.
 
-It deals with Distributing Graph States Over Arbitrary Quantum Networks using Simulacron
+It deals with Distributing Graph States Over Arbitrary Quantum Networks using Simulacron.
+
 The paper can be found at the following URL:
 https://arxiv.org/pdf/1811.05445.pdf
 
