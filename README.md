@@ -129,7 +129,5 @@ ttyplay ttyrecord
 ### Remark:
 Make sure ````ttyrecord```` is in your present working directory
 
-
-
 ![alt text](https://github.com/francois-marie/StarExpanders/blob/master/Steiner_tree.png)
 ![alt text](https://github.com/francois-marie/StarExpanders/blob/master/generalized_entanglement_swapping.png)
